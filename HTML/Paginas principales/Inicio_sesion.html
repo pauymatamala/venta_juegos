@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
-    <!-- Incluir Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Incluir tu archivo CSS -->
     <link rel="stylesheet" type="text/css" href="/CSS/Inicio_sesion.css">
 </head>
 <body>
     <div class="container">
-        <div class="title">Iniciar sesión</div>
+        <div row mb-3>
+            <div class="title">Iniciar sesión</div>
+        <div class="col-12">
+            <button type="button" class="btn btn-outline-light" id="resetBtn">Reiniciar</button>
+        </div>
+        </div>
         <form id="form-validation" class="needs-validation" novalidate>
             <div class="row mb-3">
                 <div class="col-12">
@@ -34,6 +37,7 @@
             <div class="d-flex justify-content-between">
                 <button type="submit" class="btn btn-primary" formaction="portada.html">Iniciar sesión</button>
                 <a href="Registrarse.html" class="btn btn-secondary">Registrarse</a>
+                <a href="../Paginas principales/portada.html" class="btn btn-primary id="volver">Volver</a>
             </div>
         </form>
     </div>

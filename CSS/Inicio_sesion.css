@@ -65,6 +65,16 @@ form {
     border-color: green;
     box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
 }
+#resetBtn{
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+#volver{
+    float: right;
+}
 
 
 .invalid-feedback {
