@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(130deg, orange, skyblue);
+}
+
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row.mb-3 {
+    margin-bottom: 15px;
+}
+
+.col-12 label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.col-12 input[type="text"],
+.col-12 input[type="email"],
+.col-12 input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.row.password-row {
+    display: flex;
+    gap: 10px;
+}
+
+.col-6 input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.is-invalid {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+
+.is-valid {
+    border-color: green;
+    box-shadow: 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+
+.btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(130deg, blue, skyblue);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(130deg, skyblue, blue);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+
+.invalid-feedback {
+    display: none;
+    color: red;
+    font-style: italic;
+}
+
+.was-validated .form-control:invalid ~ .invalid-feedback {
+    display: block;
+}
+
+
+.error-message {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.d-none {
+    display: none;
+}
+
+
+.d-flex {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 584px) {
+    .container {
+        padding: 15px;
+    }
+
+
+    .row.password-row {
+        flex-direction: column;
+    }
+    .col-6 {
+        width: 100%;
+    }
+}

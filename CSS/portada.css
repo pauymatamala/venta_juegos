@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(130deg, #ffcc80, #80d8ff);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #FFDAB9;
+    padding: 10px;
+    border-bottom: 2px solid #FF6347;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-title {
+    font-size: 20px;
+    color: #FF6347;
+    margin: 0 20px;
+}
+
+.login-link {
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #FF6347;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-link:hover {
+    background-color: #FF4500;
+}
+
+.navbar {
+    background-color: #FF6347;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li {
+    display: inline;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+#portada {
+    background-color: #958380;
+    padding: 125px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 25px auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #FF6347;
+    border-color: #FF6347;
+    border: solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+h5 {
+    color: #FF6347;
+    text-align: center;
+}
+
+h6 {
+    text-align: right;
+}
+
+p {
+    color: #FF6347;
+}
+
+.category-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.category-image {
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.category-title {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
