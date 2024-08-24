@@ -111,7 +111,25 @@ form {
 .btn-secondary:hover {
     background-color: #5a6268;
 }
+.btn-container {
+    text-align: right;
+}
+.btn-outline-light {     /* Color base del botón REINICIAR*/
+    background-color: #f8f9fa; /* Color de fondo */
+    color: #212529; /* Color del texto */
+    border: 1px solid #dee2e6; /* Color del borde */
+}
 
+.btn-outline-light:hover {     /* Color del botón cuando se pasa por encima REINICIAR*/
+    background-color: #e2e6ea; /* Color de fondo*/
+    color: #212529; /* Color del texto*/
+}
+
+.btn-outline-light:active {     /* Color del botón cuando se presiona (click) REINICIAR*/
+    background-color: #d6d6d6; /* Color de fondo*/
+    color: #212529; /* Color del texto*/
+    border-color: #ccc; /* Color del borde*/
+}
 
 .invalid-feedback {
     display: none;

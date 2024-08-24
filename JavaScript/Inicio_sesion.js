@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
         form.classList.add('was-validated');
     });
 
-    // Añadir funcionalidad al botón de reinicio
+    //Reinicio
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
             form.reset(); // Reinicia el formulario
             username.classList.remove('is-invalid', 'is-valid');
             password.classList.remove('is-invalid', 'is-valid');
             document.querySelectorAll('.invalid-feedback').forEach(el => el.style.display = 'none');
-            form.classList.remove('was-validated'); // Elimina la clase de validación
+            form.classList.remove('was-validated');
         });
     }
 });
