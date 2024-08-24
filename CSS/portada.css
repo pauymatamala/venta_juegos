@@ -107,11 +107,14 @@ p {
     text-align: center;
 }
 
-.category-image {
-    width: 180px;
-    height: 180px;
-    border: 2px solid black;
-    margin: 10px;
+.category-image {                   /*TODAS LAS IMAGENES TIENEN ESTA CATEGORIA*/
+    
+    width: 300px;                   /*Altura*/
+    height: 300px;                  /*Ancho*/
+    border: 5px solid black;      /*Grosor-Estilo-Color*/
+    margin-right: 50px;                   /*Margen Entre las imagenes, los titulos y el texto*/
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 .category-title {
