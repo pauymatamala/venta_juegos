@@ -107,11 +107,48 @@ p {
     text-align: center;
 }
 
-.category-image {
-    width: 180px;
-    height: 180px;
-    border: 2px solid black;
-    margin: 10px;
+.category-image {                   /*TODAS LAS CATEGORIAS TIENEN ESTAS MEDIDAS*/
+
+    width: 200px;                   /*Altura*/
+    height: 200px;                  /*Ancho*/
+    border: 5px solid black;     /*Grosor-Estilo-Color*/
+    margin-top: 30px;                
+    margin-right: 50px;                   /*Margen Entre las imagenes, los titulos y el texto*/
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.category-imagen-portada {
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    margin-top: 10px;                
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+#img{
+    background-color: rgb(199, 222, 180);
+    border: 1px solid rgb(170, 153, 58);
+}
+
+.btn-naranja {
+    background-color: orange;
+    color: rgb(10, 10, 10);
+    border: #4f473b;
+    transition: background-color 0.3s ease;
+}
+
+.btn-naranja:hover {
+    background-color: darkorange; /*Al pasar por el boton*/
+}
+
+.btn-naranja:active {
+    background-color: yellow; /*Al presionar el boton */
+    color: black; 
+}
+.campo-busqueda {
+    width: 300px;
 }
 
 .category-title {
