@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const date = document.getElementById("date");
     const errorMessage = document.getElementById("error-message");
     const errorText = document.getElementById("error-text");
+    const resetBtn = document.getElementById("resetBtn");
 
     form.addEventListener("submit", (e) => {
         let isValid = form.checkValidity();
@@ -96,4 +97,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         form.classList.add('was-validated');
     });
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            form.reset(); // Reinicia el formulario
+            [username, password, confirmPassword, email, date].forEach(field => {
+                field.classList.remove('is-invalid', 'is-valid');
+            });
+            document.querySelectorAll('.invalid-feedback').forEach(el => el.style.display = 'none');
+            errorMessage.classList.add('d-none'); // Oculta el mensaje
+            form.classList.remove('was-validated'); // Elimina las clases de validación
+        });
+    }
 });
